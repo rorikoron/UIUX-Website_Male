@@ -52,7 +52,7 @@ let updateMember = () =>{
 
     let current_data = data[data_index];
 
-    name_p.innerHTML = current_data.name;
+    name_p.innerHTML = current_data.name + `(${data_index + 1}/3)`;
     sex_p.innerHTML = current_data.sex;
     background_p.innerHTML = current_data.background;
     speciality_p.innerHTML = current_data.speciality;
