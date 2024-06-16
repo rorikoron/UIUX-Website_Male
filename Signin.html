@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <!-- common import -->
+    <link rel="stylesheet" href="./src/css/Header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-- modify each site-->
+    <link rel="stylesheet" href="./src/css/Signin.css">
+    <title>Sign-In</title>
+</head>
+<body>
+
+    <!-- header -->
+    <nav class="menubar">
+        <span class="menubar_icon icon"><a href="./index.html">Team</a></span>
+        <ul class="menubar_list">
+            <li><a href="./Member.html" class="menubar_link">Member</a></li>
+            <li><a href="./Other.html" class="menubar_link">Other</a></li>
+            <li><a href="./Contact.html" class="menubar_link">Contact</a></li>
+            <li><a href="./Help.html" class="menubar_link">Help</a></li>
+        </ul>
+        <span class="menubar_signin menubar_link primary"><a href="./Signin.html">Sign-In</a></span>
+    </nav>
+    <div class="wrapper">
+        <div class="content">
+            <div class="decoration">
+                <div class="crcl" id="crcl1"></div>
+                <div class="crcl" id="crcl2"></div>
+                <div class="crcl" id="crcl3"></div>
+                <div class="crcl" id="crcl4"></div>
+                <div class="crcl" id="crcl5"></div>
+            </div>
+            <form action="">
+                <div class="legend">
+                    <h3>Sign-In</h3>
+                    <aside>Use your account to sign-in.</aside>
+                    <a href="./Signup.html">Register New Account?</a>
+                    <a href="./Forget.html">Forget Account Info?</a>
+                </div>
+                <div class="input_field">
+                    <input type="text" id="uname" placeholder="Enter your Useranme">
+                    <input type="password" id="password" placeholder="Enter your Password">
+                </div>
+                <div class="form_btn">
+                    <input type="button" id="submit" class="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="modal_window" class="error">
+        <h4>Error!</h4>
+        <span>There is no such account,<br>please check and try again!</span>
+        <div id="modal_button">
+            <span id="btn_back">Ok</span>
+            <a href="./Forget.html" class="link">Find your account?</a>
+        </div>
+    </div>
+    
+    <div id="modal_layer">
+    </div>
+
+    <script src="./Shortcut.js"></script>
+    <script src="./Signin_common.js"></script>
+    <script src="./Signin.js"></script>
+</body>
